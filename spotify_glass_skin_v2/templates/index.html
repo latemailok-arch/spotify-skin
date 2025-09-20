@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glassify Spotify Skin v2</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="card sidebar">
+    <div class="brand">Glassify v2</div>
+    <div id="authArea">
+      <a id="loginBtn" class="btn glow" href="/login">Log in with Spotify</a>
+      <a id="logoutBtn" class="btn glow" href="/logout" style="display:none;">Logout</a>
+    </div>
+    <div class="card mini">
+      <label>Accent Color</label>
+      <input type="color" id="colorPicker" value="#1DB954">
+    </div>
+  </aside>
+  <main class="card main">
+    <div class="topbar">
+      <input type="text" id="searchInput" placeholder="Search tracks, artists, albums...">
+      <button id="searchBtn" class="btn glow">Search</button>
+    </div>
+    <div id="content">Login to see your Spotify data</div>
+  </main>
+</div>
+<script src="/static/script.js"></script>
+</body>
+</html>
